@@ -1,18 +1,10 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"
-	/*errorPage="error.jsp"*/%>
-<%
-	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
-			+ path + "/";
-%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<base href="<%=basePath%>">
+<title>My JSP 'error.jsp' starting page</title>
 
-<title>My JSP 'index.jsp' starting page</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -21,13 +13,11 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
+
 </head>
 
 <body>
-	<%
-		int a = 1 / 0;
-	%>
-	This is my JSP page.
+	服务器崩溃了......
 	<br>
 </body>
 </html>
