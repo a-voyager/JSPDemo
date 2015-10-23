@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" isErrorPage="true"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -19,5 +19,7 @@
 <body>
 	服务器崩溃了......
 	<br>
+	<% out.write(exception.getMessage()+"<br>"); %>
+	<% out.write(exception.getStackTrace().toString()); %>
 </body>
 </html>
